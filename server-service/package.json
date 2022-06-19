@@ -1,0 +1,30 @@
+{
+  "name": "litebase-server-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.test.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "mgolcu00",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "kafka-node": "^5.0.0",
+    "kafkajs": "^1.16.0",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "src/filemanager/data/*",
+      "src/filemanager/data/",
+      "src/filemanager/data"
+    ]
+  }
+}
